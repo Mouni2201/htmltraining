@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #0000ff;
+            /* color: white; */
+            place-items: center;
+            display: grid;
+
+        }
+
+        input,
+        textarea,
+        select,
+        button {
+            border-radius: 20px;
+        }
+
+        form {
+            background-color: chartreuse;
+            color: black;
+            font-size: large;
+            padding: 15px;
+            width: 35%;
+
+        }
+
+        label {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .group {
+            padding-top: 5px;
+        }
+
+        button {
+            background-color: cadetblue;
+        }
+
+        input[type="name"],
+        input[type="surname"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        select {
+
+            border: 3px solid blue;
+            padding-top: 5px;
+            width: 80%;
+        }
+    </style>
+
+<body>
+    <form>
+        <h1>Student Registration form</h1>
+        <hr />
+        <div class="group">
+            <label for="username">Name:</label><br>
+            <input type="name" id="username" name="username" placeholder="Please enter your name">
+
+        </div>
+        <div class="group">
+            <label for="usersurname">Surname:</label><br>
+            <input type="surname" id="usersurname" name="usersurname" placeholder="Please enter your surname">
+        </div>
+        <div class="group">
+            <label for="useremail">Email:</label><br>
+            <input type="email" id="useremail" name="useremail" placeholder="Please enter your Email">
+
+        </div>
+        <div class="group">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Please enter your password">
+
+        </div>
+        <div class="group">
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="date of birth">
+        </div>
+
+        <div class="group">
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="gender" name="gender">male
+            <input type="radio" id="gender" name="gender">male
+
+        </div>
+        <div class="group">
+            <label for="Hobbies">Hobbies:</label>
+            <input type="checkbox" id="Hobbies" name="Hobbies">Sports
+            <input type="checkbox" id="Hobbies" name="Hobbies">Music
+            <input type="checkbox" id="Hobbies" name="Hobbies">Painting
+
+        </div>
+        <div class="group">
+            <label for="Country">Country:</label>
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>Germany</option>
+                <option>Japan</option>
+            </select>
+        </div>
+        <div class="group">
+            <label for="Comments">Comments:</label>
+            <textarea type="textarea" id="comments" rows="5" name="usercomments"></textarea>
+        </div>
+
+        <div class="group">
+            <button>Submit</button>
+            <span> for any Quieries, search in <a href="https://www.google.com/">Google</a></span>
+        </div>
+
+    </form>
+
+</body>
+</head>
+
+</html>
